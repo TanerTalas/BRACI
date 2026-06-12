@@ -56,13 +56,13 @@ video {
 }
 
 /* Dim non-focused cards when one is hovered */
-.testimonials-track.has-focus forno-testimonial:not(.is-focused) article {
+.testimonials-track.has-focus braci-testimonial:not(.is-focused) article {
   filter: blur(1.5px);
   opacity: 0.45;
   transition: filter 250ms ease-out, opacity 250ms ease-out;
 }
 
-.testimonials-track forno-testimonial.is-focused article {
+.testimonials-track braci-testimonial.is-focused article {
   background-color: rgba(44, 28, 20, 0.9);
   transition: background-color 250ms ease-out;
 }

@@ -223,12 +223,12 @@ function setupTestimonialsMarquee(config = TESTIMONIALS_CONFIG) {
   };
 
   track.addEventListener("mouseover", (e) => {
-    const card = e.target.closest("forno-testimonial");
+    const card = e.target.closest("braci-testimonial");
     if (card) focus(card);
   });
 
   track.addEventListener("mouseout", (e) => {
-    const card = e.target.closest("forno-testimonial");
+    const card = e.target.closest("braci-testimonial");
     if (card && !card.contains(e.relatedTarget)) blur(card);
   });
 }

@@ -1,4 +1,4 @@
-class FornoTestimonial extends HTMLElement {
+class BraciTestimonial extends HTMLElement {
   static get observedAttributes() {
     return ["quote", "name", "avatar"];
   }
@@ -44,4 +44,4 @@ class FornoTestimonial extends HTMLElement {
   }
 }
 
-customElements.define("forno-testimonial", FornoTestimonial);
+customElements.define("braci-testimonial", BraciTestimonial);

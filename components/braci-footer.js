@@ -1,4 +1,4 @@
-class FornoFooter extends HTMLElement {
+class BraciFooter extends HTMLElement {
   connectedCallback() {
     const year = new Date().getFullYear();
 
@@ -8,8 +8,8 @@ class FornoFooter extends HTMLElement {
 
           <!-- Top row: logo + nav links -->
           <div class="flex flex-col items-center gap-6 md:flex-row md:items-center md:justify-between">
-            <a href="index.html" aria-label="FORNO — home">
-              <img src="assets/img/logo/logo.svg" alt="FORNO" width="110" height="26" draggable="false" class="h-6 w-auto">
+            <a href="index.html" aria-label="BRACI — home">
+              <img src="assets/img/logo/logo.svg" alt="BRACI" width="110" height="26" draggable="false" class="h-6 w-auto">
             </a>
 
             <nav aria-label="Footer navigation">
@@ -36,7 +36,7 @@ class FornoFooter extends HTMLElement {
               We don't store any of your data.
             </p>
             <p class="font-body text-xs text-cream-muted">
-              &copy; ${year} FORNO. All rights reserved.
+              &copy; ${year} BRACI. All rights reserved.
             </p>
           </div>
 
@@ -46,4 +46,4 @@ class FornoFooter extends HTMLElement {
   }
 }
 
-customElements.define("forno-footer", FornoFooter);
+customElements.define("braci-footer", BraciFooter);

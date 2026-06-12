@@ -1,4 +1,4 @@
-class FornoBookModal extends HTMLElement {
+class BraciBookModal extends HTMLElement {
   #lastFocus = null;
 
   connectedCallback() {
@@ -11,7 +11,7 @@ class FornoBookModal extends HTMLElement {
           <header class="flex items-start justify-between gap-4">
             <div>
               <p class="font-accent text-xl text-mustard">Reserve a table</p>
-              <h2 class="font-display text-3xl text-cream">Book at FORNO</h2>
+              <h2 class="font-display text-3xl text-cream">Book at BRACI</h2>
             </div>
             <button
               type="button"
@@ -90,17 +90,17 @@ class FornoBookModal extends HTMLElement {
         this.form.reportValidity();
         return;
       }
-      this.dispatchEvent(new CustomEvent("forno:book-submit", {
+      this.dispatchEvent(new CustomEvent("braci:book-submit", {
         bubbles: true,
         composed: true,
         detail: Object.fromEntries(new FormData(this.form)),
       }));
       this.close();
       this.form.reset();
-      this.#showToast("Reservation confirmed! See you at FORNO.");
+      this.#showToast("Reservation confirmed! See you at BRACI.");
     });
 
-    document.addEventListener("forno:book-open", () => this.open());
+    document.addEventListener("braci:book-open", () => this.open());
   }
 
   #updateTimeConstraints() {
@@ -206,4 +206,4 @@ class FornoBookModal extends HTMLElement {
   }
 }
 
-customElements.define("forno-book-modal", FornoBookModal);
+customElements.define("braci-book-modal", BraciBookModal);

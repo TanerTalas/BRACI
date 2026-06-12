@@ -1,10 +1,10 @@
-# 🍕 Taner Talas | FORNO Project
+# 🍕 Taner Talas | BRACI Project
 
 ## 🇬🇧 English
 
 A fictional pizza restaurant website built as a portfolio project. Retro American diner aesthetic — dark background, fire red and mustard yellow accents.
 
-🔗 **Live Demo:** `index.html` [https://tanertalas.github.io/FORNO/](https://tanertalas.github.io/FORNO/)
+🔗 **Live Demo:** `index.html` [https://tanertalas.github.io/BRACI/](https://tanertalas.github.io/BRACI/)
 
 ---
 
@@ -42,7 +42,7 @@ Open `index.html` or `menu.html` directly in browser, or use Live Server.
 
 Portföy projesi olarak geliştirilen kurgusal bir pizza restoranı sitesi. Retro Amerikan diner estetiği — koyu zemin, ateş kırmızısı ve hardal sarısı aksan.
 
-🔗 **Canlı Site**: `index.html` [https://tanertalas.github.io/FORNO/](https://tanertalas.github.io/FORNO/)
+🔗 **Canlı Site**: `index.html` [https://tanertalas.github.io/BRACI/](https://tanertalas.github.io/BRACI/)
 
 ---
 

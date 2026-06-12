@@ -1,4 +1,4 @@
-class FornoNav extends HTMLElement {
+class BraciNav extends HTMLElement {
   connectedCallback() {
     const path = window.location.pathname.split("/").pop() || "index.html";
     const isHome = path === "" || path === "index.html";
@@ -11,8 +11,8 @@ class FornoNav extends HTMLElement {
     this.innerHTML = `
       <header class="fixed inset-x-0 top-0 z-50 border-charcoal transition-colors duration-normal" data-nav-root>
         <div class="mx-auto flex max-w-[1280px] items-center justify-between px-5 py-4 md:px-8 md:py-5 lg:px-12">
-          <a href="index.html" class="flex items-center gap-3" aria-label="FORNO — home">
-            <img src="assets/img/logo/logo.svg" alt="FORNO" width="120" height="28" draggable="false" class="h-7 w-auto md:h-8">
+          <a href="index.html" class="flex items-center gap-3" aria-label="BRACI — home">
+            <img src="assets/img/logo/logo.svg" alt="BRACI" width="120" height="28" draggable="false" class="h-7 w-auto md:h-8">
           </a>
 
           <nav class="hidden items-center gap-8 md:flex" aria-label="Primary">
@@ -31,7 +31,7 @@ class FornoNav extends HTMLElement {
               type="button"
               data-menu-toggle
               aria-expanded="false"
-              aria-controls="forno-mobile-menu"
+              aria-controls="braci-mobile-menu"
               aria-label="Open menu"
               class="cursor-pointer md:hidden inline-flex h-10 w-10 items-center justify-center rounded-full border border-charcoal text-cream"
             >
@@ -46,7 +46,7 @@ class FornoNav extends HTMLElement {
         </div>
 
         <div
-          id="forno-mobile-menu"
+          id="braci-mobile-menu"
           data-mobile-menu
           hidden
           class="md:hidden border-t border-charcoal bg-bg-elevated"
@@ -71,7 +71,7 @@ class FornoNav extends HTMLElement {
     const iconClose = menuBtn.querySelector("[data-icon-close]");
 
     bookBtn.addEventListener("click", () => {
-      this.dispatchEvent(new CustomEvent("forno:book-open", { bubbles: true, composed: true }));
+      this.dispatchEvent(new CustomEvent("braci:book-open", { bubbles: true, composed: true }));
     });
 
     menuBtn.addEventListener("click", () => {
@@ -107,4 +107,4 @@ class FornoNav extends HTMLElement {
   }
 }
 
-customElements.define("forno-nav", FornoNav);
+customElements.define("braci-nav", BraciNav);

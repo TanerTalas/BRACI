@@ -37,7 +37,7 @@ const menuData = [
       { name: "Amatriciana", price: "€14" },
       { name: "Carbonara", price: "€14" },
       { name: "Pesto Rigatoni", price: "€12" },
-      { name: "Lasagna al Forno", price: "€15" },
+      { name: "Lasagna al Braci", price: "€15" },
       { name: "Gnocchi al Pomodoro", price: "€13" },
       { name: "Tagliatelle al Ragù", price: "€15" },
     ],
